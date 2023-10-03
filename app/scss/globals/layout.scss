@@ -1,12 +1,24 @@
-@use '../util' as *;
+@use "../util" as u;
 
 .container {
-	padding: 0 rem(24);
-	max-width: rem(1110);
-	margin: 0 auto;
+  padding: 0 u.rem(32);
+  max-width: u.rem(1110);
+  margin: 0 auto;
 
-	@include breakpoint(large) {
-		padding: 0;
-		transform: translate(0, 0);
-	}
+  @include u.breakpoint-up(large) {
+    padding: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.hide-for-desktop {
+  @include u.breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include u.breakpoint-down(medium) {
+    display: none;
+  }
 }

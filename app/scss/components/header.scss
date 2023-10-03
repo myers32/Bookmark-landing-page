@@ -1,0 +1,25 @@
+@use "../util" as u;
+
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: u.rem(40) 0;
+
+    &--logo {
+    }
+    &--hamMenu {
+      > span {
+        display: block;
+        height: u.rem(3);
+        width: u.rem(20);
+        background-color: var(--verydarkblue);
+
+        &:not(:last-child) {
+          margin-bottom: u.rem(3);
+        }
+      }
+    }
+  }
+}
