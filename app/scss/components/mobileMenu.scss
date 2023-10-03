@@ -1,0 +1,31 @@
+@use "../util" as u;
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: u.rem(40) u.rem(32);
+  background: hsl(var(--verydarkblue) / 0.95);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--logo {
+    }
+    &--menu {
+    }
+  }
+
+  &__links {
+  }
+
+  &__socials {
+  }
+}

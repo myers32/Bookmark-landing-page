@@ -10,16 +10,6 @@
     &--logo {
     }
     &--menu {
-      > span {
-        display: block;
-        height: u.rem(3);
-        width: u.rem(20);
-        background-color: var(--verydarkblue);
-
-        &:not(:last-child) {
-          margin-bottom: u.rem(3);
-        }
-      }
     }
   }
 }
