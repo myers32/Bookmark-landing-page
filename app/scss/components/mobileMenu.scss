@@ -15,11 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    &--logo {
-    }
-    &--menu {
-    }
   }
 
   &__links {
@@ -55,7 +50,7 @@
     justify-content: center;
     align-items: center;
     gap: u.rem(40);
-    padding-top: u.rem(100);
+    padding-top: u.rem(70);
 
     a {
       position: relative;
@@ -64,11 +59,11 @@
         content: "";
         display: block;
         position: absolute;
-        height: 0.125rem;
+        height: u.rem(2);
         width: 100%;
         left: 0;
         right: 1.5rem;
-        bottom: -0.5rem;
+        bottom: u.rem(-8);
         background: #fff;
         opacity: 0;
         transition: opacity 200ms ease-in-out;

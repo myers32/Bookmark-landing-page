@@ -20,7 +20,7 @@
   <header>
 
     <div class="header container">
-      <div class="header__nav">
+      <nav class="header__nav">
         <a href="#" class="header__nav--logo">
           <img src="images/logo-bookmark.svg" alt="Logo bookmark">
         </a>
@@ -28,7 +28,16 @@
         <a href="#" id="btnHamburger" class="header__nav--menu hide-for-desktop">
           <img src="images/icon-hamburger.svg" alt="Menu">
         </a>
-      </div>
+
+        <div class="header__nav--links hide-for-mobile">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <a href="#">
+            <div class="header__nav--button">Login</div>
+          </a>
+        </div>
+      </nav>
     </div>
 
     <div class="mobileMenu container hide-for-desktop">
@@ -57,7 +66,9 @@
         <a href="#">Features</a>
         <a href="#">Pricing</a>
         <a href="#">Contact</a>
-        <a href="#"><div class="mobileMenu__login-button">Login</div></a>
+        <a href="#">
+          <div class="mobileMenu__login-button">Login</div>
+        </a>
       </div>
 
       <div class="mobileMenu__socials">
