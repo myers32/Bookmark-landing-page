@@ -1,0 +1,9 @@
+@use "../util" as u;
+
+.hero {
+  &__image {}
+  &__text {
+    &--buttonChrome {}
+    &--buttonFirefox {}
+  }
+}
