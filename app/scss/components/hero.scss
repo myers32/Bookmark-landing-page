@@ -4,22 +4,37 @@
   &__container {
     overflow-x: hidden;
     padding-top: 40px;
+
+    @include u.breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      overflow-x: visible;
+    }
   }
 
   &__image {
     position: relative;
     height: 266px;
 
+    @include u.breakpoint-up(medium) {
+      height: 532px;
+    }
+
+    @include u.breakpoint-up(large) {
+      flex: 3;
+      order: 2;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: 18%;
       right: 0;
-      bottom: 5%;
+      bottom: 0;
       left: 12%;
       width: 150%;
       background-color: var(--softblue);
-      border-radius: 100px;
+      border-radius: 165px;
     }
 
     &::after {
@@ -33,16 +48,68 @@
       background-repeat: no-repeat;
       background-size: 107% 86%;
     }
+
+    @include u.breakpoint-up(medium) {
+      &::after {
+        background-size: 106% 96%;
+        bottom: 0;
+        left: -7%;
+        right: 0;
+        top: 0;
+      }
+
+      &::before {
+        border-radius: 180px;
+        bottom: 0;
+        top: 23%;
+      }
+    }
+
+    @include u.breakpoint-up(large) {
+      &::after {
+        background-size: 86% 90%;
+        bottom: 0;
+        left: 12%;
+        right: 0;
+        top: 0;
+        width: 126%;
+      }
+
+      &::before {
+        border-radius: 200px;
+        bottom: 6%;
+        top: 28%;
+        left: 45%;
+      }
+    }
   }
 
   &__text {
-    padding: 40px 0;
+    padding: 60px 0;
+
+    @include u.breakpoint-up(large) {
+      flex: 2;
+      order: 1;
+      h1 {
+        font-size: 40px;
+        text-align: start;
+      }
+
+      p {
+        text-align: start;
+      }
+    }
 
     &--buttons {
       padding: 40px 0;
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 11px;
+
+      @include u.breakpoint-up(large) {
+        gap: 25px;
+        justify-content: flex-start;
+      }
     }
   }
 }
@@ -50,10 +117,10 @@
 .button-chrome {
   color: var(--white);
   background-color: var(--softblue);
-  padding: u.rem(15) u.rem(18);
+  padding: u.rem(15) u.rem(17);
   border-radius: u.rem(5);
   font-size: u.rem(14);
-  font-weight: 400;
+  font-weight: 500;
   box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
   border: 2px solid var(--softblue);
 
@@ -67,10 +134,10 @@
 .button-firefox {
   color: var(--black);
   background-color: hsl(0, 0%, 95%);
-  padding: u.rem(15) u.rem(18);
+  padding: u.rem(15) u.rem(17);
   border-radius: u.rem(5);
   font-size: u.rem(14);
-  font-weight: 400;
+  font-weight: 500;
   box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
   border: 2px solid hsl(0, 0%, 95%);
 
