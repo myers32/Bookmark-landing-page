@@ -1,9 +1,82 @@
 @use "../util" as u;
 
 .hero {
-  &__image {}
+  &__container {
+    overflow-x: hidden;
+    padding-top: 40px;
+  }
+
+  &__image {
+    position: relative;
+    height: 266px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18%;
+      right: 0;
+      bottom: 5%;
+      left: 12%;
+      width: 150%;
+      background-color: var(--softblue);
+      border-radius: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4%;
+      right: -1%;
+      bottom: -10%;
+      left: -6%;
+      background-image: url(../../../images/illustration-hero.svg);
+      background-repeat: no-repeat;
+      background-size: 107% 86%;
+    }
+  }
+
   &__text {
-    &--buttonChrome {}
-    &--buttonFirefox {}
+    padding: 40px 0;
+
+    &--buttons {
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+    }
+  }
+}
+
+.button-chrome {
+  color: var(--white);
+  background-color: var(--softblue);
+  padding: u.rem(15) u.rem(18);
+  border-radius: u.rem(5);
+  font-size: u.rem(14);
+  font-weight: 400;
+  box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--softblue);
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--softblue);
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.button-firefox {
+  color: var(--black);
+  background-color: hsl(0, 0%, 95%);
+  padding: u.rem(15) u.rem(18);
+  border-radius: u.rem(5);
+  font-size: u.rem(14);
+  font-weight: 400;
+  box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+  border: 2px solid hsl(0, 0%, 95%);
+
+  &:hover {
+    border-color: var(--black);
+    background-color: var(--white);
+    transition: all 300ms ease-in-out;
   }
 }
