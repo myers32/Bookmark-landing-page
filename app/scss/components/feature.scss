@@ -8,13 +8,30 @@
 
   &__text {
     padding-bottom: u.rem(40);
+
+    @include u.breakpoint-up(large) {
+      max-width: 44%;
+      margin: 0 auto;
+    }
   }
 
   &__bookmarks {
+
+    @include u.breakpoint-up(large) {
+      border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
+    }
+
     &--buttons {
       display: flex;
       flex-direction: column;
       cursor: pointer;
+
+      @include u.breakpoint-up(large) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+      }
     }
 
     &--button {
@@ -25,6 +42,10 @@
       color: var(--grayishblue);
       border-top: u.rem(2) solid hsl(0, 0%, 94%);
       border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
+
+      @include u.breakpoint-up(large) {
+        border: none;
+      }
     }
 
     &--button:hover {
@@ -51,5 +72,10 @@
     right: 0;
     bottom: 0;
     background: var(--softred);
+
+    @include u.breakpoint-up(large) {
+      width: 150%;
+      left: -25%;
+    }
   }
 }
