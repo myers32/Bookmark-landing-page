@@ -1,0 +1,20 @@
+@use "../util" as u;
+
+.subject {
+  &__container {}
+
+  &__content {
+
+    &--image {}
+    &--text {}
+  }
+
+}
+
+.intelligent-content {
+    visibility: hidden;
+}
+
+.shareBookmarks-content {
+    visibility: hidden;
+}
