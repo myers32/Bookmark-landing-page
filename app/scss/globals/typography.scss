@@ -6,6 +6,10 @@ h1 {
   font-weight: 500;
   font-size: u.rem(28);
   text-align: center;
+
+  @include u.breakpoint-up(large) {
+    font-size: u.rem(40);
+  }
 }
 
 h2 {
@@ -14,6 +18,10 @@ h2 {
   font-weight: 500;
   font-size: u.rem(24);
   text-align: center;
+
+  @include u.breakpoint-up(large) {
+    font-size: u.rem(30);
+  }
 }
 
 h3 {
