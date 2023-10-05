@@ -6,11 +6,19 @@
   }
 
   &__content {
+    @include u.breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      gap: 280px;
+    }
+
     &--image {
       position: relative;
       height: 244px;
 
       @include u.breakpoint-up(medium) {
+        flex: 1;
+        order: 1;
         height: 532px;
       }
 
@@ -20,7 +28,7 @@
         top: 18%;
         right: 0;
         bottom: 0;
-        left: -58%;
+        left: -70%;
         width: 150%;
         background-color: var(--softblue);
         border-radius: 165px;
@@ -39,6 +47,13 @@
       }
 
       @include u.breakpoint-up(medium) {
+        &::before {
+          border-radius: 180px;
+          bottom: 0;
+          top: 23%;
+          left: -73%;
+        }
+
         &::after {
           background-size: 100% 85%;
           bottom: 0;
@@ -46,17 +61,60 @@
           right: 0;
           top: 10%;
         }
+      }
 
+      @include u.breakpoint-up(large) {
         &::before {
-          border-radius: 180px;
-          bottom: 0;
-          top: 23%;
+          border-radius: 200px;
+          bottom: 6%;
+          left: -184%;
+          top: 28%;
+          width: 300%;
+        }
+
+        &::after {
+          background-size: 100% 74%;
+          bottom: -7%;
+          left: 0%;
+          right: -39%;
+          top: 13%;
         }
       }
     }
 
     &--text {
       padding-top: u.rem(40);
+
+      @include u.breakpoint-up(large) {
+        flex: 1;
+        order: 2;
+
+        h2 {
+          text-align: start;
+        }
+
+        p {
+          padding-bottom: 24px;
+          text-align: start;
+        }
+
+        a {
+          padding: u.rem(10) u.rem(22);
+          background-color: var(--softblue);
+          border: 2px solid var(--softblue);
+          border-radius: 0.3125rem;
+          box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+          color: var(--white);
+          font-size: u.rem(14);
+          font-weight: 500;
+
+          &:hover {
+            background-color: var(--white);
+            color: var(--softblue);
+            transition: all 300ms ease-in-out;
+          }
+        }
+      }
     }
   }
 }
