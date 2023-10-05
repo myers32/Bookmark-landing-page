@@ -1,11 +1,26 @@
 @use "../util" as u;
 
-h1,
-h2,
+h1 {
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: u.rem(28);
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: u.rem(24);
+  text-align: center;
+}
+
 h3 {
   margin-top: 0;
   line-height: 1.1;
   font-weight: 500;
+  font-size: u.rem(20);
   text-align: center;
 }
 
