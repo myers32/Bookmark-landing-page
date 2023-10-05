@@ -23,7 +23,7 @@
 
           &:hover {
             color: var(--softred);
-            transition: color 300ms ease-in;
+            transition: color 300ms ease-in-out;
           }
         }
       }

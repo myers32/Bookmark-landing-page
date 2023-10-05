@@ -20,10 +20,9 @@
   }
 
   &__bookmarks {
-
     @include u.breakpoint-up(large) {
       padding-top: u.rem(40);
-      border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
+      // border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
     }
 
     &--buttons {
@@ -35,31 +34,38 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 75px;
       }
     }
 
     &--button {
       position: relative;
       padding: u.rem(20) 0;
-      font-weight: 500;
+      font-weight: 400;
       text-align: center;
       color: var(--grayishblue);
       border-top: u.rem(2) solid hsl(0, 0%, 94%);
       border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
 
       @include u.breakpoint-up(large) {
-        border: none;
+        padding: 20px 80px;
+        border-top: none;
+        border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
       }
     }
 
     &--button:hover {
-      color: var(--black);
-      transition: color 400ms ease-in-out;
+      color: var(--softred);
+      transition: color 300ms ease-in-out;
     }
 
     &--button:nth-child(2) {
       border: none;
+
+      @include u.breakpoint-up(large) {
+        padding: 20px 80px;
+        border-top: none;
+        border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
+      }
     }
   }
 }
@@ -79,8 +85,8 @@
     background: var(--softred);
 
     @include u.breakpoint-up(large) {
-      width: 150%;
-      left: -25%;
+      width: 100%;
+      left: 0%;
     }
   }
 }
