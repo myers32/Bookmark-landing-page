@@ -4,6 +4,10 @@
   &__container {
     padding-top: u.rem(68);
     padding-bottom: u.rem(68);
+
+    @include u.breakpoint-up(large) {
+      padding-bottom: 0;
+    }
   }
 
   &__text {
@@ -18,6 +22,7 @@
   &__bookmarks {
 
     @include u.breakpoint-up(large) {
+      padding-top: u.rem(40);
       border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
     }
 
