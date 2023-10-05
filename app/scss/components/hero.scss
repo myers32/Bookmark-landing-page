@@ -18,7 +18,7 @@
 
   &__image {
     position: relative;
-    height: 266px;
+    height: 244px;
 
     @include u.breakpoint-up(medium) {
       height: 532px;
@@ -94,6 +94,7 @@
     @include u.breakpoint-up(large) {
       flex: 2;
       order: 1;
+      
       h1 {
         font-size: 40px;
         text-align: start;
