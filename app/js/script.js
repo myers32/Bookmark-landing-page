@@ -26,54 +26,69 @@
     const intelligentSection = document.querySelector(".intelligent-js");
     const shareBookmarksSection = document.querySelector(".shareBookmarks-js");
 
-    simpleButton.addEventListener("click", () => {
-      if (!simpleButton.classList.contains("has-underline")) {
-        simpleButton.classList.add("has-underline");
-        speedyButton.classList.remove("has-underline");
-        easyButton.classList.remove("has-underline");
-      };
 
-      if (simpleButton.classList.contains("has-underline")) {
-        bookmarkSection.classList.remove("not-visible");
-        intelligentSection.classList.add("not-visible");
-        shareBookmarksSection.classList.add("not-visible");
-      };
-    });
+    const changeUnderline = () => {
 
+      simpleButton.addEventListener("click", () => {
+        if (!simpleButton.classList.contains("has-underline")) {
+          simpleButton.classList.add("has-underline");
+          speedyButton.classList.remove("has-underline");
+          easyButton.classList.remove("has-underline");
+        };
+      });
 
-    speedyButton.addEventListener("click", () => {
-      if (!speedyButton.classList.contains("has-underline")) {
-        simpleButton.classList.remove("has-underline");
-        speedyButton.classList.add("has-underline");
-        easyButton.classList.remove("has-underline");
-      };
+      speedyButton.addEventListener("click", () => {
+        if (!speedyButton.classList.contains("has-underline")) {
+          simpleButton.classList.remove("has-underline");
+          speedyButton.classList.add("has-underline");
+          easyButton.classList.remove("has-underline");
+        };
+      });
 
-      if (speedyButton.classList.contains("has-underline")) {
-        intelligentSection.classList.remove("not-visible");
-        bookmarkSection.classList.add("not-visible");
-        shareBookmarksSection.classList.add("not-visible");
-      };
-    });
+      easyButton.addEventListener("click", () => {
+        if (!easyButton.classList.contains("has-underline")) {
+          easyButton.classList.add("has-underline");
+          speedyButton.classList.remove("has-underline");
+          simpleButton.classList.remove("has-underline");
+        };
+      });
+    };
 
-    easyButton.addEventListener("click", () => {
-      if (!easyButton.classList.contains("has-underline")) {
-        easyButton.classList.add("has-underline");
-        speedyButton.classList.remove("has-underline");
-        simpleButton.classList.remove("has-underline");
-      };
+    const changeDisplay = () => {
 
-      if (easyButton.classList.contains("has-underline")) {
-        shareBookmarksSection.classList.remove("not-visible");
-        bookmarkSection.classList.add("not-visible");
-        intelligentSection.classList.add("not-visible");
-      };
-    });
-  }
+      simpleButton.addEventListener("click", () => {
+        if (simpleButton.classList.contains("has-underline")) {
+          bookmarkSection.classList.remove("not-visible");
+          intelligentSection.classList.add("not-visible");
+          shareBookmarksSection.classList.add("not-visible");
+        };
+      });
+
+      speedyButton.addEventListener("click", () => {
+        if (speedyButton.classList.contains("has-underline")) {
+          intelligentSection.classList.remove("not-visible");
+          bookmarkSection.classList.add("not-visible");
+          shareBookmarksSection.classList.add("not-visible");
+        };
+      });
+
+      easyButton.addEventListener("click", () => {
+        if (easyButton.classList.contains("has-underline")) {
+          shareBookmarksSection.classList.remove("not-visible");
+          bookmarkSection.classList.add("not-visible");
+          intelligentSection.classList.add("not-visible");
+        };
+      });
+    };
+
+    changeUnderline();
+    changeDisplay();
+  };
 
   const init = () => {
     menu();
     bookmarks();
-  }
+  };
 
   init();
 }
