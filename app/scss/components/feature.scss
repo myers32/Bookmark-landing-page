@@ -1,1 +1,15 @@
 @use "../util" as u;
+
+.feature {
+    &__container {
+        padding-top: u.rem(68);
+        padding-bottom: u.rem(68);
+    }
+
+    &__text {
+
+        h2{}
+
+        p{}
+    }
+}
