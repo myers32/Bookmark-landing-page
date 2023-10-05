@@ -1,20 +1,74 @@
 @use "../util" as u;
 
 .subject {
-  &__container {}
-
-  &__content {
-
-    &--image {}
-    &--text {}
+  &__container {
+    padding-bottom: u.rem(20);
   }
 
+  &__content {
+    &--image {
+      position: relative;
+      height: 244px;
+
+      @include u.breakpoint-up(medium) {
+        height: 532px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 18%;
+        right: 0;
+        bottom: 0;
+        left: -58%;
+        width: 150%;
+        background-color: var(--softblue);
+        border-radius: 165px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4%;
+        right: 0;
+        bottom: 10%;
+        left: 0;
+        background-image: url(../../../images/illustration-features-tab-1.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 94%;
+      }
+
+      @include u.breakpoint-up(medium) {
+        &::after {
+          background-size: 100% 85%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 10%;
+        }
+
+        &::before {
+          border-radius: 180px;
+          bottom: 0;
+          top: 23%;
+        }
+      }
+    }
+
+    &--text {
+      padding-top: u.rem(40);
+    }
+  }
 }
 
-.intelligent-content {
-    visibility: hidden;
+.speedy-img {
+  &::after {
+    background-image: url(../../../images/illustration-features-tab-2.svg);
+  }
 }
 
-.shareBookmarks-content {
-    visibility: hidden;
+.easy-img {
+  &::after {
+    background-image: url(../../../images/illustration-features-tab-3.svg);
+  }
 }
