@@ -83,7 +83,7 @@
     }
 
     &--text {
-      padding-top: u.rem(40);
+      padding-top: u.rem(50);
 
       @include u.breakpoint-up(large) {
         flex: 1;
