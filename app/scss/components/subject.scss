@@ -19,7 +19,9 @@
       @include u.breakpoint-up(medium) {
         flex: 1;
         order: 1;
-        height: 532px;
+        height: 480px;
+        width: 70%;
+        left: 5%;
       }
 
       &::before {
