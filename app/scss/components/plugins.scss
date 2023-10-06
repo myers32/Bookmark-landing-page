@@ -10,18 +10,53 @@
   }
 
   &__cards {
-    border-radius: 10px;
-    box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
-
     &--plugin {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 40px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.1);
 
       .browser-logo {
         width: 102px;
         height: 100px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        background-color: var(--softblue);
+        border: 2px solid var(--softblue);
+        border-radius: 0.3125rem;
+        box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+        color: var(--white);
+        font-size: u.rem(14);
+        font-weight: 500;
+        padding: 10px 30px;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--softblue);
+          transition: all 300ms ease-in-out;
+        }
+      }
+
+      p {
+        padding-bottom: 30px;
+      }
+
+      @include u.breakpoint-up(medium) {
+        width: 320px;
+        height: 380px;
+        margin: 40px auto;
+      }
+
+      @include u.breakpoint-up(large) {
+        height: auto;
+        width: auto;
       }
     }
   }
