@@ -1,15 +1,38 @@
 @use "../util" as u;
 
 .faqs {
-  &__container {}
+  &__container {
+  }
 
-  &__text {}
+  &__text {
+    padding-bottom: 40px;
+  }
 
   &__accordion {
-    &--item {}
+    &--item {
+    }
 
-    &--button {}
+    &--button {
+      border: none;
+      background: none;
+      outline: none;
+    }
 
-    &--content {}
+    &--content {
+    }
   }
 }
+
+.arrow-icon {
+  display: block;
+  background-image: url(../../../images/icon-arrow.svg);
+  background-position: center;
+  height: 8px;
+  width: 16px;
+}
+
+// button {
+//   border: none;
+//   background: none;
+//   outline: none;
+// }
