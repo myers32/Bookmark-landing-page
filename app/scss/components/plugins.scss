@@ -3,13 +3,25 @@
 .plugins {
   &__container {
     padding-top: u.rem(130);
+    padding-bottom: u.rem(330);
   }
 
   &__text {
     padding-bottom: 40px;
+
+    @include u.breakpoint-up(large) {
+      max-width: 44%;
+      margin: 0 auto;
+    }
   }
 
   &__cards {
+    @include u.breakpoint-up(large) {
+      display: flex;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
     &--plugin {
       display: flex;
       flex-direction: column;
@@ -46,6 +58,10 @@
 
       p {
         padding-bottom: 30px;
+
+        @include u.breakpoint-up(large) {
+          font-size: u.rem(15);
+        }
       }
 
       @include u.breakpoint-up(medium) {
@@ -55,9 +71,27 @@
       }
 
       @include u.breakpoint-up(large) {
+        position: relative;
         height: auto;
         width: auto;
       }
+    }
+  }
+
+  &__chrome {
+    @include u.breakpoint-up(large) {
+    }
+  }
+
+  &__firefox {
+    @include u.breakpoint-up(large) {
+      top: u.rem(45);
+    }
+  }
+
+  &__opera {
+    @include u.breakpoint-up(large) {
+      top: u.rem(90);
     }
   }
 }
