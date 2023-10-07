@@ -16,6 +16,8 @@
   }
 
   &__cards {
+    margin: 0 20px;
+
     @include u.breakpoint-up(large) {
       display: flex;
       max-width: 950px;
@@ -62,6 +64,10 @@
         @include u.breakpoint-up(large) {
           font-size: u.rem(15);
         }
+      }
+
+      img {
+        max-width: 100%;
       }
 
       @include u.breakpoint-up(medium) {
