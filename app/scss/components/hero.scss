@@ -21,13 +21,13 @@
     height: 244px;
 
     @include u.breakpoint-up(medium) {
-      height: 480px;
+      height: 450px;
       width: 70%;
       left: 25%;
     }
 
     @include u.breakpoint-up(large) {
-      height: 538px;
+      height: 550px;
       flex: 3;
       order: 2;
       left: -2%;
