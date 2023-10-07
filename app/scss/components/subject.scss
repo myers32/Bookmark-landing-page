@@ -9,7 +9,7 @@
     @include u.breakpoint-up(large) {
       display: flex;
       align-items: center;
-      gap: 280px;
+      gap: 30%;
     }
 
     &--image {
@@ -17,11 +17,15 @@
       height: 244px;
 
       @include u.breakpoint-up(medium) {
-        flex: 1;
-        order: 1;
-        height: 480px;
+        height: 450px;
         width: 70%;
         left: 5%;
+      }
+
+      @include u.breakpoint-up(large) {
+        flex: 1;
+        order: 1;
+        height: 550px;
       }
 
       &::before {
@@ -69,17 +73,17 @@
         &::before {
           border-radius: 200px;
           bottom: 6%;
-          left: -184%;
+          left: -190%;
           top: 28%;
           width: 300%;
         }
 
         &::after {
-          background-size: 100% 74%;
+          background-size: 100% 72%;
           bottom: -7%;
-          left: 0%;
-          right: -39%;
-          top: 13%;
+          left: -14%;
+          right: -34%;
+          top: 14%;
         }
       }
     }
@@ -90,6 +94,7 @@
       @include u.breakpoint-up(large) {
         flex: 1;
         order: 2;
+        padding: 0;
 
         h2 {
           text-align: start;
@@ -124,12 +129,28 @@
 .speedy-img {
   &::after {
     background-image: url(../../../images/illustration-features-tab-2.svg);
+
+    @include u.breakpoint-up(large) {
+      background-size: 100% 84%;
+      bottom: -7%;
+      left: -14%;
+      right: -40%;
+      top: 12%;
+    }
   }
 }
 
 .easy-img {
   &::after {
     background-image: url(../../../images/illustration-features-tab-3.svg);
+
+    @include u.breakpoint-up(large) {
+      background-size: 100% 82%;
+      bottom: -3%;
+      left: -14%;
+      right: -34%;
+      top: 12%;
+    }
   }
 }
 
