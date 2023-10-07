@@ -1,0 +1,15 @@
+@use "../util" as u;
+
+.faqs {
+  &__container {}
+
+  &__text {}
+
+  &__accordion {
+    &--item {}
+
+    &--button {}
+
+    &--content {}
+  }
+}
