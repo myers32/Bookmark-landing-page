@@ -94,7 +94,7 @@
       @include u.breakpoint-up(large) {
         flex: 1;
         order: 2;
-        padding: 0;
+        padding: 0 0 u.rem(90) 0;
 
         h2 {
           text-align: start;
