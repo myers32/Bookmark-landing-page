@@ -2,6 +2,7 @@
 
 .form {
   background-color: var(--softblue);
+
   &__container {
     padding-bottom: u.rem(75);
 
@@ -71,26 +72,27 @@
     }
 
     &--button {
+      display: flex;
+
       input {
         height: 100%;
-        background-color: var(--softred);
-        color: var(--white);
-        font-weight: 700;
-        font-size: u.rem(14);
+        padding: 10px;
         margin-top: u.rem(16);
         width: 100%;
-        padding: 0 u.rem(20);
+        font-weight: 700;
+        font-size: u.rem(14);
+        text-align: center;
+        color: var(--white);
         border-radius: u.rem(5);
         background-color: var(--softred);
-        text-align: center;
         border: u.rem(2) solid var(--softred);
 
         &:hover {
+          color: var(--softred);
           background-color: white;
           border: u.rem(2) solid var(--softred);
           cursor: pointer;
           transition: all 300ms ease-in-out;
-          color: var(--softred);
         }
 
         @include u.breakpoint-up(large) {
