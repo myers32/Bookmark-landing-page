@@ -76,10 +76,21 @@
     });
   };
 
+  const accordion = () => {
+    const faqs = document.querySelectorAll(".faqs__accordion--item");
+
+    faqs.forEach(faq => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+      })
+    })
+  }
+
   const init = () => {
     menu();
     changeUnderline();
     changeDisplay();
+    accordion();
   };
 
   init();
