@@ -6,6 +6,7 @@
   }
 
   &__content {
+    
     @include u.breakpoint-up(large) {
       display: flex;
       align-items: center;

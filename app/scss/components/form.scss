@@ -4,6 +4,16 @@
   background-color: var(--softblue);
   &__container {
     padding-bottom: 75px;
+
+    @include u.breakpoint-up(medium) {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    @include u.breakpoint-up(large) {
+      max-width: 35%;
+      margin: 0 auto;
+    }
   }
 
   &__text {
@@ -22,10 +32,19 @@
       margin-top: 10px;
       font-size: u.rem(24);
       color: var(--white);
+
+      @include u.breakpoint-up(large) {
+        font-size: u.rem(28);
+      }
     }
   }
 
   &__input {
+    @include u.breakpoint-up(large) {
+      display: flex;
+      gap: 20px;
+    }
+
     &--input {
       width: 100%;
       padding: 15px;
@@ -35,6 +54,10 @@
       &::placeholder {
         color: var(--grayishblue);
         font-family: var(--font-body);
+      }
+
+      @include u.breakpoint-up(large) {
+        flex: 3;
       }
     }
 
@@ -51,6 +74,11 @@
         color: var(--white);
         font-weight: 500;
         font-size: 14px;
+      }
+
+      @include u.breakpoint-up(large) {
+        flex: 1;
+        margin-top: 0;
       }
     }
 
