@@ -3,12 +3,18 @@
 .faqs {
   &__container {
     @include u.breakpoint-up(large) {
-      max-width: 50%;
+      padding-top: 100px;
+      max-width: 59%;
     }
   }
 
   &__text {
     padding-bottom: 40px;
+
+    @include u.breakpoint-up(medium) {
+      margin: 0 auto;
+      max-width: 60%;
+    }
 
     @include u.breakpoint-up(large) {
       padding: 0 15px 40px;
