@@ -1,12 +1,63 @@
 @use "../util" as u;
 
 .footer {
+  background-color: var(--verydarkbluehsl);
+
   &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+
+    @include u.breakpoint-up(large) {
+      flex-direction: row;
+      padding-bottom: 30px;
+    }
+
     &--logo {
+      @include u.breakpoint-up(large) {
+        flex: 1;
+      }
     }
+
     &--links {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+
+      @include u.breakpoint-up(large) {
+        flex-direction: row;
+        flex: 5;
+      }
+
+      a {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--verylightgray);
+        font-size: u.rem(14);
+        letter-spacing: 2px;
+
+        &:hover {
+          color: var(--softred);
+          transition: color 300ms ease-in-out;
+        }
+      }
     }
+
     &--socials {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      svg:hover {
+        path {
+          fill: var(--softred);
+          transition: all 300ms ease-in-out;
+        }
+      }
     }
   }
 }
