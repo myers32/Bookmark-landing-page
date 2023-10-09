@@ -3,7 +3,7 @@
 .form {
   background-color: var(--softblue);
   &__container {
-    padding-bottom: 75px;
+    padding-bottom: u.rem(75);
 
     @include u.breakpoint-up(medium) {
       max-width: 60%;
@@ -17,15 +17,15 @@
   }
 
   &__text {
-    padding-top: 75px;
-    padding-bottom: 35px;
+    padding-top: u.rem(75);
+    padding-bottom: u.rem(35);
 
     p {
       font-size: u.rem(10);
       text-transform: uppercase;
       color: var(--white);
       font-weight: 400;
-      letter-spacing: 6px;
+      letter-spacing: u.rem(6);
 
       @include u.breakpoint-up(large) {
         font-size: u.rem(13);
@@ -34,7 +34,7 @@
     }
 
     h3 {
-      margin-top: 10px;
+      margin-top: u.rem(10);
       font-size: u.rem(24);
       color: var(--white);
 
@@ -52,12 +52,12 @@
 
     &--input {
       width: 100%;
-      padding: 15px;
-      border-radius: 5px;
+      padding: u.rem(15);
+      border-radius: u.rem(5);
       border: none;
 
       &:focus {
-        border: 2px solid var(--softred);
+        border: u.rem(2) solid var(--softred);
       }
 
       &::placeholder {
@@ -75,23 +75,22 @@
         height: 100%;
         background-color: var(--softred);
         color: var(--white);
-        font-weight: 500;
-        font-size: 14px;
-        margin-top: 16px;
+        font-weight: 700;
+        font-size: u.rem(14);
+        margin-top: u.rem(16);
         width: 100%;
-        padding: 0 20px;
-        border-radius: 5px;
+        padding: 0 u.rem(20);
+        border-radius: u.rem(5);
         background-color: var(--softred);
         text-align: center;
-        border: 2px solid var(--softred);
+        border: u.rem(2) solid var(--softred);
 
         &:hover {
           background-color: white;
-          border: 2px solid var(--softred);
+          border: u.rem(2) solid var(--softred);
           cursor: pointer;
           transition: all 300ms ease-in-out;
           color: var(--softred);
-          font-weight: 500;
         }
 
         @include u.breakpoint-up(large) {

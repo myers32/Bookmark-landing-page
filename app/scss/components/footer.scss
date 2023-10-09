@@ -8,12 +8,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 40px 0;
+    gap: u.rem(50);
+    padding: u.rem(40) 0;
 
     @include u.breakpoint-up(large) {
       flex-direction: row;
-      padding-bottom: 30px;
+      padding-bottom: u.rem(30);
     }
 
     &--logo {
@@ -25,7 +25,7 @@
     &--links {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: u.rem(30);
       align-items: center;
 
       @include u.breakpoint-up(large) {
@@ -38,7 +38,7 @@
         text-transform: uppercase;
         color: var(--verylightgray);
         font-size: u.rem(14);
-        letter-spacing: 2px;
+        letter-spacing: u.rem(2);
 
         &:hover {
           color: var(--softred);
@@ -50,7 +50,7 @@
     &--socials {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: u.rem(40);
 
       svg:hover {
         path {

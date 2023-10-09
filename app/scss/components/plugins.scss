@@ -21,11 +21,11 @@
   }
 
   &__cards {
-    margin: 0 20px;
+    margin: 0 u.rem(20);
 
     @include u.breakpoint-up(large) {
       display: flex;
-      max-width: 950px;
+      max-width: u.rem(950);
       margin: 0 auto;
     }
 
@@ -33,28 +33,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 60px;
-      padding-bottom: 30px;
-      margin-bottom: 40px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+      padding-top: u.rem(60);
+      padding-bottom: u.rem(30);
+      margin-bottom: u.rem(40);
+      border-radius: u.rem(15);
+      box-shadow: 0 u.rem(3) u.rem(12) rgba(0, 0, 0, 0.1);
 
       .browser-logo {
-        width: 102px;
-        height: 100px;
-        margin-bottom: 20px;
+        width: u.rem(102);
+        height: u.rem(100);
+        margin-bottom: u.rem(20);
       }
 
       a {
         background-color: var(--softblue);
-        border: 2px solid var(--softblue);
-        border-radius: 0.3125rem;
-        box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+        border: u.rem(2) solid var(--softblue);
+        border-radius: u.rem(5);
+        box-shadow: 0 u.rem(3) u.rem(12) rgba(0, 0, 0, 0.2);
         color: var(--white);
         font-size: u.rem(14);
         font-weight: 500;
-        padding: 10px 30px;
-        margin-top: 20px;
+        padding: u.rem(10) u.rem(30);
+        margin-top: u.rem(20);
 
         &:hover {
           background-color: var(--white);
@@ -64,7 +64,7 @@
       }
 
       p {
-        padding-bottom: 30px;
+        padding-bottom: u.rem(30);
 
         @include u.breakpoint-up(large) {
           font-size: u.rem(15);
@@ -76,9 +76,9 @@
       }
 
       @include u.breakpoint-up(medium) {
-        width: 320px;
-        height: 380px;
-        margin: 40px auto;
+        width: u.rem(320);
+        height: u.rem(380);
+        margin: u.rem(40) auto;
       }
 
       @include u.breakpoint-up(large) {

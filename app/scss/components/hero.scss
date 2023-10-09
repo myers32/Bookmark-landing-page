@@ -7,7 +7,7 @@
 
   &__container {
     overflow-x: hidden;
-    padding-top: 40px;
+    padding-top: u.rem(40);
 
     @include u.breakpoint-up(large) {
       display: flex;
@@ -18,16 +18,16 @@
 
   &__image {
     position: relative;
-    height: 244px;
+    height: u.rem(244);
 
     @include u.breakpoint-up(medium) {
-      height: 450px;
+      height: u.rem(450);
       width: 70%;
       left: 25%;
     }
 
     @include u.breakpoint-up(large) {
-      height: 550px;
+      height: u.rem(550);
       flex: 3;
       order: 2;
       left: -2%;
@@ -42,7 +42,7 @@
       left: 12%;
       width: 150%;
       background-color: var(--softblue);
-      border-radius: 165px;
+      border-radius: u.rem(165);
     }
 
     &::after {
@@ -67,7 +67,7 @@
       }
 
       &::before {
-        border-radius: 180px;
+        border-radius: u.rem(180);
         bottom: 0;
         top: 23%;
       }
@@ -84,7 +84,7 @@
       }
 
       &::before {
-        border-radius: 200px;
+        border-radius: u.rem(200);
         bottom: 6%;
         top: 28%;
         left: 45%;
@@ -93,14 +93,14 @@
   }
 
   &__text {
-    padding: 60px 0;
+    padding: u.rem(60) 0;
 
     @include u.breakpoint-up(large) {
       flex: 2;
       order: 1;
 
       h1 {
-        font-size: 40px;
+        font-size: u.rem(40);
         text-align: start;
       }
 
@@ -110,13 +110,13 @@
     }
 
     &--buttons {
-      padding: 40px 0;
+      padding: u.rem(40) 0;
       display: flex;
       justify-content: center;
-      gap: 11px;
+      gap: u.rem(11);
 
       @include u.breakpoint-up(large) {
-        gap: 25px;
+        gap: u.rem(25);
         justify-content: flex-start;
       }
     }
@@ -130,7 +130,7 @@
   border-radius: u.rem(5);
   font-size: u.rem(14);
   font-weight: 500;
-  box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem u.rem(3) u.rem(12) rgba(0, 0, 0, 0.2);
   border: 2px solid var(--softblue);
 
   &:hover {
@@ -151,8 +151,8 @@
   border-radius: u.rem(5);
   font-size: u.rem(14);
   font-weight: 500;
-  box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
-  border: 2px solid hsl(0, 0%, 95%);
+  box-shadow: 0rem u.rem(3) u.rem(12) rgba(0, 0, 0, 0.2);
+  border: u.rem(2) solid hsl(0, 0%, 95%);
 
   &:hover {
     border-color: var(--black);

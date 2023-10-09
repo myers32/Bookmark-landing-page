@@ -3,13 +3,13 @@
 .faqs {
   &__container {
     @include u.breakpoint-up(large) {
-      padding-top: 70px;
+      padding-top: u.rem(70);
       max-width: 59%;
     }
   }
 
   &__text {
-    padding-bottom: 40px;
+    padding-bottom: u.rem(40);
 
     @include u.breakpoint-up(medium) {
       margin: 0 auto;
@@ -17,14 +17,14 @@
     }
 
     @include u.breakpoint-up(large) {
-      padding: 0 15px 40px;
+      padding: 0 u.rem(15) u.rem(40);
     }
   }
 
   &__accordion {
     &--item {
-      border-bottom: 0.125rem solid #f0f0f0;
-      padding-top: 25px;
+      border-bottom: u.rem(2) solid #f0f0f0;
+      padding-top: u.rem(25);
       cursor: pointer;
 
       &:hover {
@@ -35,10 +35,10 @@
     &--button {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 15px;
+      padding-bottom: u.rem(15);
 
       h3 {
-        font-size: 15px;
+        font-size: u.rem(15);
         font-weight: 500;
       }
     }
@@ -46,15 +46,15 @@
     &--content {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 1000ms ease;
+      transition: max-height 1400ms ease;
 
       p {
         color: var(--dimgray);
-        padding-top: 15px;
-        padding-bottom: 30px;
+        padding-top: u.rem(15);
+        padding-bottom: u.rem(30);
         text-align: start;
         line-height: 2.1;
-        font-size: 14px;
+        font-size: u.rem(14);
       }
     }
   }
@@ -62,19 +62,19 @@
   &__button {
     display: flex;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: u.rem(60);
+    padding-bottom: u.rem(100);
 
     &--button {
       display: inline-block;
       background-color: var(--softblue);
-      border: 2px solid var(--softblue);
-      border-radius: 0.3125rem;
-      box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+      border: u.rem(2) solid var(--softblue);
+      border-radius: u.rem(5);
+      box-shadow: 0 u.rem(3) u.rem(12) rgba(0, 0, 0, 0.2);
       color: var(--white);
-      font-size: 0.875rem;
+      font-size: u.rem(14);
       font-weight: 500;
-      padding: 0.625rem 1.375rem;
+      padding: u.rem(10) u.rem(22);
 
       &:hover {
         background-color: var(--white);
@@ -86,8 +86,8 @@
 }
 
 .faqs__accordion--item.active .faqs__accordion--content {
-  max-height: 300px;
-  animation: fade 1000ms ease-in-out;
+  max-height: u.rem(300);
+  animation: fade 600ms ease-in-out;
 }
 
 .faqs__accordion--item.active svg {
@@ -105,10 +105,10 @@ svg {
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(u.rem(-10));
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }

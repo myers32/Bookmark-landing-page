@@ -6,7 +6,6 @@
   }
 
   &__content {
-    
     @include u.breakpoint-up(large) {
       display: flex;
       align-items: center;
@@ -15,10 +14,10 @@
 
     &--image {
       position: relative;
-      height: 244px;
+      height: u.rem(244);
 
       @include u.breakpoint-up(medium) {
-        height: 450px;
+        height: u.rem(450);
         width: 70%;
         left: 5%;
       }
@@ -26,7 +25,7 @@
       @include u.breakpoint-up(large) {
         flex: 1;
         order: 1;
-        height: 550px;
+        height: u.rem(550);
       }
 
       &::before {
@@ -38,7 +37,7 @@
         left: -70%;
         width: 150%;
         background-color: var(--softblue);
-        border-radius: 165px;
+        border-radius: u.rem(165);
       }
 
       &::after {
@@ -55,7 +54,7 @@
 
       @include u.breakpoint-up(medium) {
         &::before {
-          border-radius: 180px;
+          border-radius: u.rem(180);
           bottom: 0;
           top: 23%;
           left: -73%;
@@ -72,7 +71,7 @@
 
       @include u.breakpoint-up(large) {
         &::before {
-          border-radius: 200px;
+          border-radius: u.rem(200);
           bottom: 6%;
           left: -190%;
           top: 28%;
@@ -102,7 +101,7 @@
         }
 
         p {
-          padding-bottom: 24px;
+          padding-bottom: u.rem(24);
           text-align: start;
         }
 
@@ -110,8 +109,8 @@
           padding: u.rem(10) u.rem(22);
           background-color: var(--softblue);
           border: 2px solid var(--softblue);
-          border-radius: 0.3125rem;
-          box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+          border-radius: u.rem(5);
+          box-shadow: 0 u.rem(3) u.rem(12) rgba(0, 0, 0, 0.2);
           color: var(--white);
           font-size: u.rem(14);
           font-weight: 500;

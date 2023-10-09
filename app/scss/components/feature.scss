@@ -23,7 +23,6 @@
   &__bookmarks {
     @include u.breakpoint-up(large) {
       padding-top: u.rem(40);
-      // border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
     }
 
     &--buttons {
@@ -63,7 +62,7 @@
       border: none;
 
       @include u.breakpoint-up(large) {
-        padding: 20px 80px;
+        padding: u.rem(20) u.rem(80);
         border-top: none;
         border-bottom: u.rem(2) solid hsl(0, 0%, 94%);
       }
