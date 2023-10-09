@@ -68,6 +68,12 @@
       font-size: 0.875rem;
       font-weight: 500;
       padding: 0.625rem 1.375rem;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--softblue);
+        transition: all 300ms ease-in-out;
+      }
     }
   }
 }
