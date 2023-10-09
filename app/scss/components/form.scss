@@ -3,6 +3,7 @@
 .form {
   background-color: var(--softblue);
   &__container {
+    padding-bottom: 75px;
   }
 
   &__text {
@@ -25,7 +26,43 @@
   }
 
   &__input {
+    &--input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 5px;
+      border: none;
+
+      &::placeholder {
+        color: var(--grayishblue);
+        font-family: var(--font-body);
+      }
+    }
+
     &--button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: var(--softred);
+      text-align: center;
+      border: 2px solid var(--softred);
+
+      a {
+        color: var(--white);
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+
+    &--button:hover {
+      background-color: white;
+      border: 2px solid var(--softred);
+      cursor: pointer;
+      transition: all 300ms ease-in-out;
+
+      a {
+        color: var(--softred);
+      }
     }
   }
 }
