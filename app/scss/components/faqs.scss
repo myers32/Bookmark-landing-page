@@ -3,7 +3,7 @@
 .faqs {
   &__container {
     @include u.breakpoint-up(large) {
-      padding-top: 100px;
+      padding-top: 70px;
       max-width: 59%;
     }
   }
