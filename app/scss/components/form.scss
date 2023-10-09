@@ -26,6 +26,11 @@
       color: var(--white);
       font-weight: 400;
       letter-spacing: 6px;
+
+      @include u.breakpoint-up(large) {
+        font-size: u.rem(13);
+        padding-bottom: u.rem(20);
+      }
     }
 
     h3 {
@@ -34,7 +39,7 @@
       color: var(--white);
 
       @include u.breakpoint-up(large) {
-        font-size: u.rem(28);
+        font-size: u.rem(32);
       }
     }
   }
@@ -51,6 +56,10 @@
       border-radius: 5px;
       border: none;
 
+      &:focus {
+        border: 2px solid var(--softred);
+      }
+
       &::placeholder {
         color: var(--grayishblue);
         font-family: var(--font-body);
@@ -62,34 +71,33 @@
     }
 
     &--button {
-      margin-top: 16px;
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      background-color: var(--softred);
-      text-align: center;
-      border: 2px solid var(--softred);
-
-      a {
+      input {
+        height: 100%;
+        background-color: var(--softred);
         color: var(--white);
         font-weight: 500;
         font-size: 14px;
-      }
+        margin-top: 16px;
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 5px;
+        background-color: var(--softred);
+        text-align: center;
+        border: 2px solid var(--softred);
 
-      @include u.breakpoint-up(large) {
-        flex: 1;
-        margin-top: 0;
-      }
-    }
+        &:hover {
+          background-color: white;
+          border: 2px solid var(--softred);
+          cursor: pointer;
+          transition: all 300ms ease-in-out;
+          color: var(--softred);
+          font-weight: 500;
+        }
 
-    &--button:hover {
-      background-color: white;
-      border: 2px solid var(--softred);
-      cursor: pointer;
-      transition: all 300ms ease-in-out;
-
-      a {
-        color: var(--softred);
+        @include u.breakpoint-up(large) {
+          flex: 1;
+          margin-top: 0;
+        }
       }
     }
   }
