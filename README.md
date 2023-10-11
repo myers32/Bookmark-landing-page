@@ -31,8 +31,7 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![desktop-preview](https://github.com/myers32/Bookmark-landing-page/assets/122280628/bd0cff59-d314-43c2-85a7-b11851bb4b58)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
