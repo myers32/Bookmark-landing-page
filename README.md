@@ -104,7 +104,7 @@ Also I want to upgrade my knowledge in JS from beginner to more advanced.
 
 ### Useful resources
 
-- [CSS-Tricks](https://www.css-tricks.com) - This helped me a lot at creating this code. It has really interesting articles where everything I needed was explained in some beginner friendly manner. I really enjoyed helping myself with this website when creating this code.
+- [CSS-Tricks](https://www.css-tricks.com) - This helped me a lot at creating this code. It has really interesting articles where everything I needed was explained in beginner friendly manner. I really enjoyed helping myself with this website when creating this code.
 
 ## Author
 
