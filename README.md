@@ -40,7 +40,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- [Sass]: Syntactically Awesome Style Sheets (https://sass-lang.com/)
+- [Sass](https://sass-lang.com/): Syntactically Awesome Style Sheets 
 - Basic JavaScript
 - CSS custom properties
 - Flexbox
