@@ -46,7 +46,7 @@ Users should be able to:
   
 ### What I learned
 
-I figured out by myself how to access and change the .svg image color in CSS.
+I figured out how to access and change the .svg image color in CSS.
 
 ```css
   path {
