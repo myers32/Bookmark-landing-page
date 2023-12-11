@@ -1,4 +1,4 @@
-# Bookmark landing page solution
+# Bookmark landing page
 
 ## Table of contents
 
