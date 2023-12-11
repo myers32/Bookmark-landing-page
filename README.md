@@ -104,4 +104,4 @@ Also I want to upgrade my knowledge in JS from beginner to more advanced.
 
 ## Author
 
-- Website - [Dawid Osiński](https://github.com/myers32)
+- [Dawid Osiński](https://github.com/myers32)
